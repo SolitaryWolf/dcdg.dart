@@ -13,8 +13,7 @@ Future<Iterable<ClassElement>> findClassElements({
   required bool exportedOnly,
   required String searchPath,
 }) async {
-  String makePackageSubPath(String part0, [String part1 = '']) =>
-      path.normalize(
+  String makePackageSubPath(String part0, [String part1 = '']) => path.normalize(
         path.absolute(
           path.join(
             packagePath,
